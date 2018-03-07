@@ -5,6 +5,13 @@
     <title>自动化测试平台(Automated Testing)</title>
 </head>
 <body>
-    <h1>Hello Django!</h1>
+    <h1>登录&注册</h1>
+    <form method="post" action="/login_action/">
+        <input name="Username" type="text" placeholder="username"><br>
+        <input name="Password" type="password" placeholder="password"><br>
+        {{ error }}<br>
+        <button id="login" type="submit">登录</button>
+        {% csrf_token %}
+    </form>
 </body>
 </html>
