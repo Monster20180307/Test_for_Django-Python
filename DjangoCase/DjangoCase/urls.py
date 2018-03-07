@@ -21,6 +21,7 @@ from sign import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^admin/',admin.site.urls),
-    url(r'^index/$',views.index),
-    url(r'^login_action/$',views.login_action),
+    url(r'^index/$',views.index),#主页
+    url(r'^login_action/$',views.login_action),#登录
+    url(r'^login_seccess/$',views.login_seccess),#登录成功
 ]
